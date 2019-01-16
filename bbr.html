@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <title>安装BBR加速教程-搬瓦工_BandwagonHost_搬瓦工VPS中文网</title>
+    <meta name="keywords" content="搬瓦工,BandwagonHost,搬瓦工VPS,BandwagonHost VPS,搬瓦工ss" />
+    <meta name="description" content="搬瓦工-BandwagonHost官网，最具性价比的美国便宜VPS，支持支付宝付款，让您在最短的时间内拥有一台VPS。" />
+
+<script src="https://www.gstatic.com/firebasejs/5.7.3/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyA4ZN8La2c3KJJDYtSsqk0SQy-2PBQwroY",
+    authDomain: "bandwagon-9df34.firebaseapp.com",
+    databaseURL: "https://bandwagon-9df34.firebaseio.com",
+    projectId: "bandwagon-9df34",
+    storageBucket: "bandwagon-9df34.appspot.com",
+    messagingSenderId: "276736307653"
+  };
+  firebase.initializeApp(config);
+</script>
+    <script src="https://bwg1024.oss-cn-beijing.aliyuncs.com/static/js/vue.min.js?v=fc888ceb818"></script>
+    <link rel="shortcut icon" href="https://bwg1024.oss-cn-beijing.aliyuncs.com/static/img/favico.png?v=fc888ceb818" type="image/x-icon" />
+    <link rel="stylesheet" href="https://bwg1024.oss-cn-beijing.aliyuncs.com/static/css/font.min.css?v=fc888ceb818">
+    <link rel="stylesheet" href="https://bwg1024.oss-cn-beijing.aliyuncs.com/static/fa/css/font-awesome.min.css?v=fc888ceb818">
+    <link rel="stylesheet" href="https://bwg1024.oss-cn-beijing.aliyuncs.com/static/css/customize.css?v=fc888ceb818">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">搬瓦工VPS</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-menu" aria-controls="navbarNavAltMarkup"
+                aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+            <div class="collapse navbar-collapse" id="main-menu">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                                        <li class="nav-item">
+                                            <a id="navlink" class="nav-link" href="index.html" title="首页" label="index">首页</a>
+                    </li>
+                                        <li class="nav-item">
+                                            <a id="navlink" class="nav-link" href="youhuima.html" title="优惠码" label="coupons">优惠码</a>
+                    </li>
+                                        <li class="nav-item">
+                                            <a id="navlink" class="nav-link" href="jifang.html" title="机房选择" label="idc">机房选择</a>
+                    </li>
+                                        <li class="nav-item">
+                                            <a id="navlink" class="nav-link" href="fangan.html" title="方案选择" label="plan">方案介绍</a>
+                    </li>
+                                        <li class="nav-item">
+                                            <a id="navlink" class="nav-link" href="jiaocheng.html" title="3分钟学会海淘VPS" label="tutorial">图文教程</a>
+                    </li>
+                                        <li class="nav-item">
+                                            <a id="navlink" class="nav-link" href="faq.html" title="常见问题" label="faq">常见问题</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="navlink" class="nav-link" href="blog/index.html" title="搬瓦工博客" label="blog">最新动态</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <a class="btn btn-outline-success my-2 my-sm-0" href="index.html#coupons">立即获得94折优惠码</a>
+                </form>
+            </div>
+        </div>
+    </nav>
+        <div class="container d-sm-block d-md-none">
+        <img class="d-block w-100" src="https://bwg1024.oss-cn-beijing.aliyuncs.com/static/img/banner_ban%402x.jpg?v=fc888ceb818" alt="搬瓦工banner">
+    </div>  <div class="container">
+    <div class="row mt-3">
+      <!-- main -->
+      <div class="col-md-8" role="main">
+        <!-- notice -->
+        <div class="alert alert-warning" role="alert">
+    <i class="fa fa-lightbulb-o fa-lg mr-2 bg-ico" aria-hidden="true"></i> 【搬瓦工推荐优惠】：CN2 GT普通线路/GIA顶级线路优惠中…… >>> <a href="buy.html" onclick="gtag('event', 'click', { 'event_category': 'notice', 'event_label': 'more' });">立即抢购</a>
+</div>        <!-- bbr -->
+        <div>
+    <h3 class="border-bottom-1"><i class="fa fa-bookmark mr-2" aria-hidden="true"></i>BBR配置教程</h3>
+    <hr>
+    <p>本教程将用三分钟教你如何安装网速神器BBR内核。</p>
+    <p>2016年Google公司提出了TCP拥塞控制新算法BBR，改进了TCP拥塞控制策略。<br>BBR解决了下面两个问题：</p>
+    <p>1.在有一定丢包率的网络链路上充分利用带宽。</p>
+    <p>2.降低网络链路上的 buffer 占用率，从而降低延迟。</p>
+    <h3 class="border-bottom-1"><i class="fa fa-bookmark mr-2" aria-hidden="true"></i>安装条件：</h3>
+    <hr>
+    <p>虚拟化：KVM，注意：OpenVZ不行！选购KVM搬瓦工机器 &gt;&gt;&gt;&nbsp;</p>
+    <p>系统：CentOS 6+，Debian 7+，Ubuntu 12+</p>
+    <p>内存：128MB以上</p>
+    <h3 class="border-bottom-1"><i class="fa fa-bookmark mr-2" aria-hidden="true"></i>安装方法：</h3>
+    <hr>
+    <p>当前已有简化安装方式，这里推荐使用一键脚本进行安装，连接SSH，输入以下命令：</p>
+    <p>wget --no-check-certificate https://github.com/teddysun/across/raw/master/bbr.sh<br>chmod u+x bbr.sh<br>./bbr.sh</p>
+    <p>整体完成后会提示重启，输入y并重启VPS。</p>
+    <h3 class="border-bottom-1"><i class="fa fa-bookmark mr-2" aria-hidden="true"></i>检验是否成功：</h3>
+    <hr>
+    <p>1.检验系统版本</p>
+    <p>uname -r</p>
+    <p>内核版本升级为 4.10以上则说明内核升级已完成<br></p>
+    <p>2.检查内核模块<br>lsmod | grep bbr<br></p>
+    <p>返回值有 tcp_bbr 模块即已启用BBR模块</p>
+</div>      </div>
+      <!-- main end -->
+      <!-- sidebar -->
+      <div class="col-md-4">
+    <div class="card mb-3">
+        <p class="card-header">关于本站</p>
+        <div class="card-body">
+            <p class="card-text">&emsp;&emsp;本专题站非搬瓦工(BandwagonHost)官网，作者是搬瓦工资深用户，拥有丰富经验以及多台搬瓦工VPS。作者将众多经验分享给大家，避免大家走弯路，只需根据本站教程指引即可购买到想要的VPS。<br>&emsp;&emsp;欢迎加入搬瓦工VPS交流QQ群，干货满满，群号：621990909 <a href="https://jq.qq.com/?_wv=1027&k=5rD88yi" target="_blank">(一键入群)</a></p>
+        </div>
+    </div>
+    <div class="card mb-3">
+        <p class="card-header">面向人群</p>
+        <div class="card-body">
+            <p class="card-text">
+                <i class="fa fa-paper-plane-o px-2" aria-hidden="true"></i>ITer、科技、极客等爱折腾人士；<br>
+                <i class="fa fa-paper-plane-o px-2" aria-hidden="true"></i>学生、科研人员等学术需求人士；<br>
+                <i class="fa fa-paper-plane-o px-2" aria-hidden="true"></i>Steam 等平台的海外吃鸡人士；<br>
+                <i class="fa fa-paper-plane-o px-2" aria-hidden="true"></i>有海外业务的中小型博客、企业；<br>
+            </p>
+        </div>
+    </div>
+    <div class="card mb-3">
+        <p class="card-header">CN2是什么？与中国直连比哪个更快？</p>
+        <div class="card-body">
+            <p class="card-text">
+                &emsp;&emsp;CN2线路是中国电信推出的下一代承载网，拥有全新、高速国际出口路由规则，中国上海至美国洛杉矶只需140ms，已接近理论极限值，可谓<span class="text-danger">新时代的国际精品网络</span>。<br>
+                <hr> &emsp;&emsp;如果您使用中国电信，建议选择CN2线路，该线路会给您的海外访问带来前所未有的光速体验。
+                <br> &emsp;&emsp;如您使用中国移动网络，建议选择CN2线路，经过测试移动租用了电信CN2线路，与中国电信共享国际出口，高速体验。
+                <br> &emsp;&emsp;如您使用中国联通网络，优先选择中国直连方案，ping值约在170ms，也是国际高质量线路，2k视频压力不大。
+                <br> &emsp;&emsp;其他宽带运营商，存在不确定因素，本站建议优先选择中国直连方案，尽最大可能可以保证国际出口速度。
+            </p>
+        </div>
+    </div>
+    <div class="card mb-3">
+        <p class="card-header">KVM与OpenVZ该选哪个？</p>
+        <div class="card-body">
+            <p class="card-text">
+                &emsp;&emsp;KVM与OpenVZ均为当前主流成熟的虚拟化方案，对新手用户来说使用区别不大，新手应多练习VPS使用，熟悉各种Linux命令，早日成为VPS高手。<br> &emsp;&emsp;KVM为其中KVM为全虚拟化方案，拥有独立虚拟化内核，因此KVM用户可以对系统内核进行修改，比如安装TCP
+                BBR内核。
+                <br> &emsp;&emsp;OpenVZ是半虚拟化技术，用户无法修改系统模板，定制化差一些。KVM与OpenVZ整体使用起来无明显差别。
+                <br> &emsp;&emsp;一句话概括：
+                <span class="text-danger">线路 > 价格 > 虚拟化</span>
+            </p>
+        </div>
+    </div>
+    <div class="card mb-3">
+        <p class="card-header">退款政策</p>
+        <div class="card-body">
+            <p class="card-text">&emsp;&emsp;搬瓦工(BandwagonHost)提供30天内不满意退款政策(每个帐号2次机会)，让您的购买没有任何后顾之忧。如您想退款可直接在后台提交工单，工作人员会在72小时内办理退款。</p>
+        </div>
+    </div>
+
+    <div class="card">
+    <p class="card-header">新手教程</p>
+    <ul class="list-group">
+        <li class="list-group-item">
+            <a href="jiaocheng.html">最新搬瓦工VPS购买图文教程</a>
+        </li>
+        <li class="list-group-item">
+            <a href="bbr.html#">搬瓦工VPSLinux重装教程</a>
+        </li>
+        <li class="list-group-item">
+            <a href="bbr.html">搬瓦工VPS安装BBR加速教程</a>
+        </li>
+        <li class="list-group-item">
+            <a href="youhuima.html">搬瓦工VPS优惠码获取及使用教程</a>
+        </li>
+        <li class="list-group-item">
+            <a href="jifang.html">搬瓦工VPS机房IP及网速自测教程</a>
+        </li>
+    </ul>
+</div>
+</div>      <!-- sidebar end -->
+    </div>
+  </div>
+  <!-- footer -->
+  <!-- Modal -->
+<div class="modal fade" id="CouponModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">已复制到剪切板
+                </h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>成功领取搬瓦工优惠码 - <span id="coupon">BWH26FXH3HIQ</span></p>
+                <p>优惠码使用教程 <a href="jiaocheng.html" target="_blank">&gt;&gt;&gt; Go</a></p>
+                <p>搬瓦工机房介绍 <a href="jifang.html" target="_blank">&gt;&gt;&gt; Go</a></p>
+                <p>所有VPS方案一览 <a href="fangan.html" target="_blank">&gt;&gt;&gt; Go</a></p>
+                <p>加入搬瓦工交流QQ群，获取各类搭建教程，群号：621990909 <a href="https://jq.qq.com/?_wv=1027&k=5rD88yi" target="_blank">&gt;&gt;&gt;(一键入群)</a></p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="BuyModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">感谢您购买搬瓦工VPS
+                    </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    
+                    <p>1. 如在购买上遇到问题，建议查阅VPS购买教程 <a href="jiaocheng.html" target="_blank">&gt;&gt;&gt; Go</a></p>
+                    <p>2. 如购买教程无法解决您的问题，请联系右下方人工客服 </p>
+                    <p>3. 欢迎加入搬瓦工交流QQ群，获取各类教程、VPS优惠信息，群号：621990909 <a href="https://jq.qq.com/?_wv=1027&k=5rD88yi" target="_blank">&gt;&gt;&gt;(一键入群)</a></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
+                </div>
+            </div>
+        </div>
+    </div>
+<div class="modal fade" id="SoldoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Sorry, 方案已售罄
+                    </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>请注意：请优先从<a href="buy.html" target="_blank">推荐页面</a>选购，改页面实时更新</p>
+                    <p>您选择的方案十分火爆，可能已被抢光啦 ಥ_ಥ </p>
+                    <p><span id="coupon">请加搬瓦工福利Q群</span>，获取内部上货时间</p>
+                    <p>加入搬瓦工交流QQ群，我们会第一时间推送抢购信息、各类搭建教程，干货满满！</p>
+                    <p>QQ群号： 621990909 <a href="https://jq.qq.com/?_wv=1027&k=5rD88yi" target="_blank">&gt;&gt;&gt;(一键入群)</a></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
+                </div>
+            </div>
+        </div>
+    </div>
+<hr>
+<div class="container">
+    <div class="col-md-12">
+        <p class="text-center">
+            <small>Copyright © 2018
+                banwagong            </small>
+        </p>
+                            </div>
+</div>
+<script src="https://bwg1024.oss-cn-beijing.aliyuncs.com/static/js/react.min.js?v=fc888ceb818"></script>
+<!--Start of Contact Script-->
+    <script type="text/javascript">
+    </script>
+<!--End of Contact Script-->
+
+
+  
+</body>
+
+</html>

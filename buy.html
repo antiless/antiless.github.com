@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <title>搬瓦工2018年12月大促-搬瓦工_BandwagonHost_搬瓦工VPS中文网</title>
+    <meta name="keywords" content="搬瓦工,BandwagonHost,搬瓦工VPS,BandwagonHost VPS,搬瓦工ss" />
+    <meta name="description" content="搬瓦工-BandwagonHost官网，最具性价比的美国便宜VPS，支持支付宝付款，让您在最短的时间内拥有一台VPS。" />
+
+<script src="https://www.gstatic.com/firebasejs/5.7.3/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyA4ZN8La2c3KJJDYtSsqk0SQy-2PBQwroY",
+    authDomain: "bandwagon-9df34.firebaseapp.com",
+    databaseURL: "https://bandwagon-9df34.firebaseio.com",
+    projectId: "bandwagon-9df34",
+    storageBucket: "bandwagon-9df34.appspot.com",
+    messagingSenderId: "276736307653"
+  };
+  firebase.initializeApp(config);
+</script>
+    <script src="https://bwg1024.oss-cn-beijing.aliyuncs.com/static/js/vue.min.js?v=fc888ceb818"></script>
+    <link rel="shortcut icon" href="https://bwg1024.oss-cn-beijing.aliyuncs.com/static/img/favico.png?v=fc888ceb818" type="image/x-icon" />
+    <link rel="stylesheet" href="https://bwg1024.oss-cn-beijing.aliyuncs.com/static/css/font.min.css?v=fc888ceb818">
+    <link rel="stylesheet" href="https://bwg1024.oss-cn-beijing.aliyuncs.com/static/fa/css/font-awesome.min.css?v=fc888ceb818">
+    <link rel="stylesheet" href="https://bwg1024.oss-cn-beijing.aliyuncs.com/static/css/customize.css?v=fc888ceb818">
+    </head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">搬瓦工VPS</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-menu" aria-controls="navbarNavAltMarkup"
+                aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+            <div class="collapse navbar-collapse" id="main-menu">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                                        <li class="nav-item">
+                                            <a id="navlink" class="nav-link" href="index.html" title="首页" label="index">首页</a>
+                    </li>
+                                        <li class="nav-item">
+                                            <a id="navlink" class="nav-link" href="youhuima.html" title="优惠码" label="coupons">优惠码</a>
+                    </li>
+                                        <li class="nav-item">
+                                            <a id="navlink" class="nav-link" href="jifang.html" title="机房选择" label="idc">机房选择</a>
+                    </li>
+                                        <li class="nav-item">
+                                            <a id="navlink" class="nav-link" href="fangan.html" title="方案选择" label="plan">方案介绍</a>
+                    </li>
+                                        <li class="nav-item">
+                                            <a id="navlink" class="nav-link" href="jiaocheng.html" title="3分钟学会海淘VPS" label="tutorial">图文教程</a>
+                    </li>
+                                        <li class="nav-item">
+                                            <a id="navlink" class="nav-link" href="faq.html" title="常见问题" label="faq">常见问题</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="navlink" class="nav-link" href="blog/index.html" title="搬瓦工博客" label="blog">最新动态</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <a class="btn btn-outline-success my-2 my-sm-0" href="index.html#coupons">立即获得94折优惠码</a>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- flashimg start -->
+    <div class="container d-none d-md-block">
+        <div id="flashimg" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#flashimg" data-slide-to="0"></li>
+                <li data-target="#flashimg" data-slide-to="1"></li>
+                <li data-target="#flashimg" data-slide-to="2"></li>
+                <li data-target="#flashimg" data-slide-to="3"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="https://bwg1024.oss-cn-beijing.aliyuncs.com/static/img/b1_ban.png?v=fc888ceb818" alt="价格便宜">
+                    <div class="carousel-caption carousel-b-20 d-none d-md-block">
+                        <h2>搬瓦工VPS最低只需<span class="ninteen">19.9</span>美元/年</h2>
+                        <p class="mt-3">高性能主机+国际精品网络，2K视频无压力！</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="https://bwg1024.oss-cn-beijing.aliyuncs.com/static/img/b2_ban.png?v=fc888ceb818" alt="网络优质">
+                    <div class="carousel-caption carousel-b-20 d-none d-md-block">
+                        <h2>高速CN2网络助力海外访问，就是<span class="kuai">快</span>！</h2>
+                        <p class="mt-3">搬瓦工现已推出高品质CN2网络VPS，最快只需150毫秒</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="https://bwg1024.oss-cn-beijing.aliyuncs.com/static/img/b3_ban.png?v=fc888ceb818" alt="快捷支付">
+                    <div class="carousel-caption carousel-t-30 d-none d-md-block text-dark">
+                        <h3>无惧海淘，支付宝轻松付款</h3>
+                        <p class="mt-3">无需Visa信用卡，支付宝一键人民币付款，安全快捷</p>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="buy.html#flashimg" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+            <a class="carousel-control-next" href="buy.html#flashimg" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+        </div>
+    </div>
+    <!-- flashimg end -->
+    <div class="container d-sm-block d-md-none">
+        <img class="d-block w-100" src="https://bwg1024.oss-cn-beijing.aliyuncs.com/static/img/banner_ban@2x.jpg?v=fc888ceb818" alt="搬瓦工banner">
+    </div>
+  <div class="container">
+    <div class="row mt-3">
+      <!-- main -->
+      <div class="col-md-12" role="main">
+        <!-- plan -->
+        <!-- notice -->
+<div>
+    <div class="alert alert-warning mt-2 text-center" role="alert">
+        <a class="anchor" name="coupons"></a>
+        <i class="fa fa-lightbulb-o fa-lg mr-2 bg-ico" aria-hidden="true"></i> <b style="color: #f14545">【黑五+双十二活动】：如果您有选择困难症，直接选第一排右2，CN2 GIA顶级线路，极速$35/年。</b>
+    </div>
+    <div class="alert alert-warning mt-2 text-center" role="alert">
+        <a class="anchor" name="coupons"></a>
+        <i class="fa fa-lightbulb-o fa-lg mr-2 bg-ico" aria-hidden="true"></i> 使用本站专享超值优惠码，全场立减<b style="color: #f14545">6.25%</b> : B******K
+        <button
+                type="button" class="ml-3 btn btn-sm btn-outline-secondary clipboard" data-clipboard-text="BWH26FXH3HIQ" data-container="body"
+                data-toggle="popover" data-placement="right" data-content="复制成功">点此领取</button>
+    </div>
+</div>
+<!-- plan row heiwu -->
+<div>
+    <a class="anchor" name="plan"></a>
+    <h3 class="border-bottom-1 mt-3"><i class="fa fa-bookmark mr-2" aria-hidden="true"></i>黑五 特价促销款<small class="text-secondary"> CN2 GT线路 & 企业级CN2 GIA线路</small></h3>
+    <hr>
+</div>
+<div>
+    <div class="card-deck">
+        <!-- row 1 -->
+        <div class="card border-secondary mb-3">
+            <div class="card-header text-white title-bg bg-danger"><span class="text-warning prefix">[黑五]</span><span class="title">CN2 黑五特价促销款</span></div>
+            <div class="card-body px-0 pb-2">
+                <ul class="text-dark">
+                    <li class="cpu">CPU：1核</li>
+                    <li class="memory">内存：512 MB</li>
+                    <li class="disk">硬盘：20GB SSD RAID-10</li>
+                    <li class="usage">流量：<b style="color: #f14545"> 1TB</b>/月 (CN2) </li>
+                    <li class="region">机房：CN2机房(DC3)</li>
+                    <li class="transfer">迁移：8机房迁移(不能迁移到DC8)</li>
+                    <li class="price_year">年付：<b style="color: #f14545">$27.6/年</b>（优惠码：BWH26FXH3HIQ)</li>
+                </ul>
+                <div class="text-center">
+                    <a href="https://bandwagonhost.com/aff.php?aff=39151" label="BlackFriday-CN2-GT" pid="82" class="btn btn-primary mx-auto status status-ok"><i class="fa fa-shopping-cart fa-x2 mr-2" aria-hidden="true"></i>购买</a>
+                </div>
+            </div>
+            <div class="card-footer text-muted text-center suffix" style="font-weight:600">
+                <b style="color: #f14545">1TB CN2流量</b> 黑五特价促销
+            </div>
+        </div>
+        <!-- row 2 -->
+        <div class="card border-secondary mb-3">
+            <div class="card-header text-white title-bg bg-success"><span class="text-warning prefix">[黑五]</span><span class="title">CN2 GIA 黑五特价促销款</span></div>
+            <div class="card-body px-0 pb-2">
+                <ul class="text-dark">
+                    <li class="cpu">CPU：1核</li>
+                    <li class="memory">内存：256 MB</li>
+                    <li class="disk">硬盘：20GB SSD RAID-10</li>
+                    <li class="usage">流量：250 GB/月 <b style="color: #f14545">(CN2 GIA)</b> </li>
+                    <li class="region">机房：<b style="color: #f14545">CN2 GIA机房</b></li>
+                    <li class="transfer">迁移：可迁移到10机房</li>
+                    <li class="price_year">年付：<b style="color: #f14545">$35.93/年</b>（优惠码：BWH26FXH3HIQ)</li>
+                </ul>
+                <div class="text-center">
+                    <a href="javascript:; " label="BlackFriday-CN2-GIA" pid="83" class="btn btn-primary mx-auto status status-ok"><i class="fa fa-shopping-cart fa-x2 mr-2" aria-hidden="true"></i>购买</a>
+                    <!-- <a href="javascript:; " label="20G-KVM-QNET-39" pid="55" class="btn btn-secondary mx-auto disable status status-na">售罄</a> -->
+                </div>
+            </div>
+            <div class="card-footer text-muted text-center suffix" style="font-weight:600">
+                <b style="color: #f14545">CN2 GIA 高端线路</b> 直接选这个不纠结！
+            </div>
+        </div>
+    </div>
+</div>
+<!-- plan row cybermonday & 1212 -->
+<div>
+    <a class="anchor" name="plan"></a>
+    <h3 class="border-bottom-1 mt-3"><i class="fa fa-bookmark mr-2" aria-hidden="true"></i>网络星期一/双12 特价促销款<small class="text-secondary"> 普通CN2套餐 & 企业级CN2 GIA套餐</small></h3>
+    <hr>
+</div>
+<div>
+    <div class="card-deck">
+        <!-- row 1 -->
+        <div class="card border-secondary mb-3">
+            <div class="card-header text-white title-bg bg-danger"><span class="text-warning prefix">[促销]</span><span class="title">网络星期一促销款</span></div>
+            <div class="card-body px-0 pb-2">
+                <ul class="text-dark">
+                    <li class="cpu">CPU：2核</li>
+                    <li class="memory">内存：1024 MB</li>
+                    <li class="disk">硬盘：40GB SSD RAID-10</li>
+                    <li class="usage">流量：1TB/月 (CN2) </li>
+                    <li class="region">机房：CN2等9机房（包括DC8）</li>
+                    <li class="transfer">迁移：9机房随意迁移，迁移CN2流量变为1/3</li>
+                    <li class="price_year">年付：<b style="color: #f14545">$29.9/年</b>（优惠码：BWH26FXH3HIQ)</li>
+                </ul>
+                <div class="text-center">
+                    <a href="javascript:; " label="CyberMonday-2999" pid="84" class="btn btn-primary mx-auto status status-ok"><i class="fa fa-shopping-cart fa-x2 mr-2" aria-hidden="true"></i>购买</a>
+                </div>
+            </div>
+            <div class="card-footer text-muted text-center suffix" style="font-weight:600">
+                <b style="color: #f14545">可迁CN2 DC8机房</b> 配置强悍
+            </div>
+        </div>
+        <!-- row 2 -->
+        <div class="card border-secondary mb-3">
+            <div class="card-header text-white title-bg bg-success"><span class="text-warning prefix">[促销]</span><span class="title">12.12 DC8 促销款</span></div>
+            <div class="card-body px-0 pb-2">
+                <ul class="text-dark">
+                    <li class="cpu">CPU：1核</li>
+                    <li class="memory">内存：1024 MB</li>
+                    <li class="disk">硬盘：20GB SSD RAID-10</li>
+                    <li class="usage">流量：1000 GB/月 <b style="color: #f14545">(CN2 流量)</b> </li>
+                    <li class="region">机房：CN2 DC8机房</li>
+                    <li class="transfer">迁移：可迁移到9机房，流量不变</li>
+                    <li class="price_year">年付：<b style="color: #f14545">$38.99/年</b>（优惠码：BWH26FXH3HIQ)</li>
+                </ul>
+                <div class="text-center">
+                    <a href="javascript:; " label="1212-CN2-DC8" pid="85" class="btn btn-primary mx-auto status status-ok"><i class="fa fa-shopping-cart fa-x2 mr-2" aria-hidden="true"></i>购买</a>
+                    <!-- <a href="javascript:; " label="20G-KVM-QNET-39" pid="55" class="btn btn-secondary mx-auto disable status status-na">售罄</a> -->
+                </div>
+            </div>
+            <div class="card-footer text-muted text-center suffix" style="font-weight:600">
+                <b style="color: #f14545">1TB流量 CN2 DC8机房</b> 超值流量随便用
+            </div>
+        </div>
+    </div>
+</div>
+<div>
+    <a class="anchor" name="plan"></a>
+    <h3 class="border-bottom-1 mt-3"><i class="fa fa-bookmark mr-2" aria-hidden="true"></i>新人必选方案<small class="text-secondary"> 经济年付，学生白领人士必备</small></h3>
+    <hr>
+</div>
+<!-- plan row 1 -->
+<div>
+    <div class="card-deck">
+        <!-- row 1 -->
+        <div class="card border-secondary mb-3">
+            <div class="card-header text-white title-bg bg-danger"><span class="text-warning prefix">[必选]</span><span class="title">CN2 19刀入门限定款</span></div>
+            <div class="card-body px-0 pb-2">
+                <ul class="text-dark">
+                    <li class="cpu">CPU：1核</li>
+                    <li class="memory">内存：512 MB</li>
+                    <li class="disk">硬盘：10GB SSD RAID-10</li>
+                    <li class="usage">流量：500GB/月 (普通流量) </li>
+                    <li class="region">机房：8机房,建议选USCA_2</li>
+                    <li class="transfer">迁移：可迁移到CN2机房</li>
+                    <li class="price_month">月付：无 (仅年付)</li>
+                    <li class="price_semi">半年付：无 (仅年付)</li>
+                    <li class="price_year">年付：$19.99/年（约138元)</li>
+                </ul>
+                <div class="text-center">
+                    <a href="javascript:; " label="10G-KVM-CN2-19" pid="43" class="btn btn-primary mx-auto status status-ok"><i class="fa fa-shopping-cart fa-x2 mr-2" aria-hidden="true"></i>购买</a>
+                </div>
+            </div>
+            <div class="card-footer text-muted text-center suffix" style="font-weight:600">
+                <b style="color: #f14545">新手首选 镇店之宝 经常售罄</b>
+            </div>
+        </div>
+        <!-- row 2 -->
+        <div class="card border-secondary mb-3">
+            <div class="card-header text-white title-bg bg-success"><span class="text-warning prefix">[标准]</span><span class="title">CN2 特价促销款 10G</span></div>
+            <div class="card-body px-0 pb-2">
+                <ul class="text-dark">
+                    <li class="cpu">CPU：1核</li>
+                    <li class="memory">内存：512 MB</li>
+                    <li class="disk">硬盘：10GB SSD RAID-10</li>
+                    <li class="usage">流量：500 GB/月 (CN2流量) </li>
+                    <li class="region">机房：默认洛杉矶CN2 可换至8机房</li>
+                    <li class="transfer">迁移：可迁移，<b>流量不变</b></li>
+                    <li class="price_month">月付：无 (仅年付)</li>
+                    <li class="price_semi">半年付：无 (仅年付)</li>
+                    <li class="price_year">年付：$29.99/年（约208元)</li>
+                </ul>
+                <div class="text-center">
+                    <a href="javascript:; " label="10G-KVM-CN2-2999" pid="56" class="btn btn-primary mx-auto status status-ok"><i class="fa fa-shopping-cart fa-x2 mr-2" aria-hidden="true"></i>购买</a>
+                    <!-- <a href="javascript:; " label="20G-KVM-QNET-39" pid="55" class="btn btn-secondary mx-auto disable status status-na">售罄</a> -->
+                </div>
+            </div>
+            <div class="card-footer text-muted text-center suffix" style="font-weight:600">
+                <b style="color: #f14545">500G/月 CN2流量</b> 单人足够用
+            </div>
+        </div>
+        <!-- row 3-->
+        <div class="card border-secondary mb-3">
+            <div class="card-header text-white title-bg bg-primary"><span class="text-warning prefix">[高配]</span><span class="title">CN2 特价促销款 20G</span></div>
+            <div class="card-body px-0 pb-2">
+                <ul class="text-dark">
+                    <li class="cpu">CPU：1核</li>
+                    <li class="memory">内存：1024 MB</li>
+                    <li class="disk">硬盘：20GB SSD RAID-10</li>
+                    <li class="usage">流量：1000GB/月 (CN2流量)</li>
+                    <li class="region">机房：默认洛杉矶CN2 可换至8机房</li>
+                    <li class="transfer">迁移：可迁移，<b>流量不变</b></li>
+                    <li class="price_month">月付：现已取消月付</li>
+                    <li class="price_semi">半年付：$25.99/半年（约180元)</li>
+                    <li class="price_year">年付：$49.99/年（约345元)</li>
+                </ul>
+                <div class="text-center">
+                    <a href="javascript:; " label="20G-KVM-CN2-49" pid="57" class="btn btn-primary mx-auto status status-ok"><i class="fa fa-shopping-cart fa-x2 mr-2" aria-hidden="true"></i>购买</a>
+                </div>
+            </div>
+            <div class="card-footer text-muted text-center suffix">
+                1TB精品CN2流量 无拘无束任性使用
+            </div>
+        </div>
+    </div>
+</div>
+
+<div>
+    <a class="anchor" name="plan"></a>
+    <h3 class="border-bottom-1 mt-3"><i class="fa fa-bookmark mr-2" aria-hidden="true"></i>高端精选方案<small class="text-secondary"> 高速稳定，外贸商务、海外业务人士必选</small></h3>
+    <hr>
+</div>
+<!-- plan row 2 -->
+<div>
+    <div class="card-deck">
+        <!-- p2 r1 -->
+        <div class="card border-secondary mb-3">
+            <div class="card-header text-white title-bg bg-primary"><span class="text-warning prefix">[VIP]</span><span class="title">CN2 GIA 特价促销款 20G</span></div>
+            <div class="card-body px-0 pb-2">
+                <ul class="text-dark">
+                    <li class="cpu">CPU：2核</li>
+                    <li class="memory">内存：1024 MB</li>
+                    <li class="disk">硬盘：20GB SSD RAID-10</li>
+                    <li class="usage">流量：1000GB/月 (CN2流量)</li>
+                    <li class="region">机房：CN2 GIA机房</li>
+                    <li class="transfer">迁移：可迁移，<b>流量不变</b></li>
+                    <li class="price_month">季付：$25.99/季（约180元)</li>
+                    <li class="price_semi">半年付：$49.99/半年（约345元)</li>
+                    <li class="price_year">年付：$93.99/年（约652元)</li>
+                </ul>
+                <div class="text-center">
+                    <a href="javascript:; " label="20G-KVM-CN2-GIA" pid="72" class="btn btn-primary mx-auto status status-ok"><i class="fa fa-shopping-cart fa-x2 mr-2" aria-hidden="true"></i>购买</a>
+                </div>
+            </div>
+            <div class="card-footer text-muted text-center suffix">
+                CN2 GIA 企业级高端VIP线路
+            </div>
+        </div>
+        <!-- p2 r2 -->
+                <!-- p2 r3 -->
+        <div class="card border-secondary mb-3">
+            <div class="card-header text-white title-bg bg-primary"><span class="text-warning prefix">[香港]</span><span class="title">香港直连极速方案 80G</span></div>
+            <div class="card-body px-0 pb-2">
+                <ul class="text-dark">
+                    <li class="disk">硬盘：80GB SSD RAID-10</li>
+                    <li class="memory">内存：4GB</li>
+                    <li class="cpu">CPU：Intel Xeon * 1</li>
+                    <li class="usage">流量：300 GB/月 (高端香港流量)</li>
+                    <li class="region">机房：香港MCX10机房</li>
+                    <li class="transfer">迁移：不可迁移</li>
+                    <li class="price_month">月付：$39.99/月</li>
+                    <li class="price_semi">半年付：$219.99/半年</li>
+                    <li class="price_year">年付：399.99/年</li>
+                </ul>
+                <div class="text-center">
+                    <a href="javascript:; " label="80G-KVM-HK-39" pid="63" class="btn btn-primary mx-auto status status-ok"><i class="fa fa-shopping-cart fa-x2 mr-2" aria-hidden="true"></i>购买</a>
+                </div>
+            </div>
+            <div class="card-footer text-muted text-center suffix">
+                目前最便宜的香港机房套餐
+            </div>
+        </div>
+        <!-- p2 r3(backup) -->
+        <div class="card border-secondary mb-3">
+            <div class="card-header text-white title-bg bg-primary"><span class="text-warning prefix">[香港]</span><span class="title">香港直连极速方案 160G</span></div>
+            <div class="card-body px-0 pb-2">
+                <ul class="text-dark">
+                    <li class="cpu">CPU：2核</li>
+                    <li class="memory">内存：8GB </li>
+                    <li class="disk">硬盘：160GB SSD RAID-10</li>
+                    <li class="usage">流量：500 GB/月 (高端香港流量)</li>
+                    <li class="region">机房：香港MCX10机房</li>
+                    <li class="transfer">迁移：不可迁移</li>
+                    <li class="price_month">月付：$79.99/月</li>
+                    <li class="price_semi">半年付：$439.99/半年</li>
+                    <li class="price_year">年付：$799.99/年</li>
+                </ul>
+                <div class="text-center">
+                    <a href="javascript:; " label="80G-KVM-HK-39" pid="64" class="btn btn-primary mx-auto status status-ok"><i class="fa fa-shopping-cart fa-x2 mr-2" aria-hidden="true"></i>购买</a>
+                </div>
+            </div>
+            <div class="card-footer text-muted text-center suffix">
+                500G香港高端流量 8GB豪华配置
+            </div>
+        </div>
+    </div>
+</div>
+<div>
+    <hr class="mt-1">
+
+    <div class="alert alert-secondary mt-2" role="alert">
+        <i class="fa fa-lightbulb-o fa-lg mr-2 bg-ico" aria-hidden="true"></i> 以上方案为精选方案，查看其余20款方案，总有一款适合你！更多方案请点 >>>
+        <a href="https://bandwagonhost.com/aff.php?aff=39151" target="_blank">查看完整方案</a>
+    </div>
+</div>        <!-- tutorial -->
+        <div>
+    <h3 class="border-bottom-1 mt-2"><i class="fa fa-bookmark mr-2" aria-hidden="true"></i>购买教程<small class="text-secondary"> Tutorial</small></h3>
+    <hr>
+    <p>&emsp;&emsp;1. 选择上方心仪方案并点[购买]按钮</p>
+    <p>&emsp;&emsp;2. 核对购买年限和机房并点下一步</p>
+    <p>&emsp;&emsp;3. 返回本页面复制搬瓦工95折优惠码，验证优惠码</p>
+    <p>&emsp;&emsp;4. 填写个人资料，邮箱、密码等信息，点击支付宝付款</p>
+    <p>&emsp;&emsp;5. 完成支付宝付款，等待主机开通</p>
+    <p>&emsp;&emsp;6. 登录后台，开始使用</p>
+    <div class="alert alert-primary mt-2" role="alert">
+        <i class="fa fa-lightbulb-o fa-lg mr-2 bg-ico" aria-hidden="true"></i> 详细完整图文购买+配置教程请点击 >>> <a href="jiaocheng.html">图文教程</a>
+    </div>
+</div>        <!-- faq -->
+        <div>
+    <h3 class="border-bottom-1 mt-3"><i class="fa fa-bookmark mr-2" aria-hidden="true"></i>常见问题<small class="text-secondary"> FAQ</small></h3>
+    <hr>
+    <h5>Q：CN2是什么意思？CN2 GIA又是什么呢？</h5>
+    <p class="pb-2">A：CN2是中国电信的下一代通信网络，与直连线路比较：CN2具有高带宽、高网速的优势。CN2也分为两种：CN2 GT和CN2 GIA，在没有特指的时候，CN2默认是CN2 GT线路。CN2 GIA是CN2的高端企业级VIP线路，极速体验，缺点【除了贵】真就没有其他的了。</p>
+    <h5>Q：普通流量、CN2流量、HK流量都是什么意思？</h5>
+    <p class="pb-2">A：CN2流量和HK流量属于优质流量，本身成本十分高。因此普通流量迁移到CN2机房，流量会变为1/3，大约有160GB；而CN2机房是不受此限制的，仍是500GB；HK流量就更贵了，因此只能在HK机房使用。</p>
+    <h5>Q：购买后选机房应该选哪个？</h5>
+    <p class="pb-2">A：$19.99方案建议选USCA_2，之后可以在后台手动换到CN2机房(DC8)；$29.99方案建议选USCA_8。</p>
+    <h5>Q：中国移动选择哪个方案？</h5>
+    <p class="pb-2">A：经过最新测试，中国移动租用了中国电信CN2线路，出口和中国电信一致。请购买CN2线路，如10G KVM (洛杉矶CN2)。</p>
+    <h5>Q：可以安装哪些系统？Windows可以安装吗？</h5>
+    <p class="pb-2">A：无法安装Windows，可安装主流Linux系统，如CentOS、Ubuntu、FreeBSD等系统。</p>
+    <h5>Q：系统重装或更换其他系统有限制吗？需要收费吗？</h5>
+    <p class="pb-2">A：搬瓦工VPS可[免费][无限次]重装或更换系统，您可以任意切换各种系统。</p>
+    <h5>Q：购买后速度不理想，是否可以更换到其他机房？</h5>
+    <p class="pb-2">A：购买8机房方案可以更换机房，CN2方案由于机房特殊目前不支持更换。</p>
+    <h5>Q：VPS状态显示Fraud(欺诈)怎么办？</h5>
+    <p class="pb-2">A：注册信息不要胡乱填写，尤其国家一栏需与你当前网络环境的IP一致；另外不要用一些黑PayPal付款，100%会被发现。</p>
+    <h5>Q：我可以用远程桌面管理VPS吗？</h5>
+    <p class="pb-2">A：不可以，搬瓦工所有VPS均为Linux系统，需通过SSH进行连接、管理。</p>
+    <h5>Q：连接SSH的工具有哪些推荐？</h5>
+    <p class="pb-2">A：站长推荐使用XShell进行管理，SecureCRT和PuTTY也是大家常用程序。</p>
+    <h5>Q：VPS什么时候续费？可以一次买多年吗？</h5>
+    <p class="pb-2">A：搬瓦工采用国外通用的账单模式，不可以买多年。系统会在VPS到期后的一周内生成新账单并以邮件通知，在一周内续费即可。</p>
+    <h5>Q：搬瓦工VPS可以用来做建站吗？</h5>
+    <p class="pb-2">A：完全可以！非常适合中小型网站，建议选择洛杉矶CN2+KVM+2G内存方案。</p>
+    <h5>Q：联通用户可以选CN2吗？</h5>
+    <p class="pb-2">A：可以，但目前来讲CN2优化仅针对中国电信用户，联通用户购买国内直连方案即可。</p>
+    <h5>Q：选KVM？还是OpenVZ？</h5>
+    <p class="pb-2">A：这个问题对新手来说没有太大意义。一句话来说：想折腾的选KVM，想买便宜货的选OpenVZ，但从业界大趋势来看，建议购买虚拟化程度更高的KVM方案。</p>
+    <div class="alert alert-warning mt-2" role="alert">
+        <i class="fa fa-lightbulb-o fa-lg mr-2 bg-ico" aria-hidden="true"></i> 更多新手教程，请访问 >>> <a href="blog/index.html">搬瓦工博客</a>
+    </div>
+</div>      </div>
+      <!-- main end -->
+    </div>
+  </div>
+  <!-- footer -->
+  <!-- Modal -->
+<div class="modal fade" id="CouponModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">已复制到剪切板
+                </h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>成功领取搬瓦工优惠码 - <span id="coupon">BWH26FXH3HIQ</span></p>
+                <p>优惠码使用教程 <a href="jiaocheng.html" target="_blank">&gt;&gt;&gt; Go</a></p>
+                <p>搬瓦工机房介绍 <a href="jifang.html" target="_blank">&gt;&gt;&gt; Go</a></p>
+                <p>所有VPS方案一览 <a href="fangan.html" target="_blank">&gt;&gt;&gt; Go</a></p>
+                <p>加入搬瓦工交流QQ群，获取各类搭建教程，群号：621990909 <a href="https://jq.qq.com/?_wv=1027&k=5rD88yi" target="_blank">&gt;&gt;&gt;(一键入群)</a></p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="BuyModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">感谢您购买搬瓦工VPS
+                    </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    
+                    <p>1. 如在购买上遇到问题，建议查阅VPS购买教程 <a href="jiaocheng.html" target="_blank">&gt;&gt;&gt; Go</a></p>
+                    <p>2. 如购买教程无法解决您的问题，请联系右下方人工客服 </p>
+                    <p>3. 欢迎加入搬瓦工交流QQ群，获取各类教程、VPS优惠信息，群号：621990909 <a href="https://jq.qq.com/?_wv=1027&k=5rD88yi" target="_blank">&gt;&gt;&gt;(一键入群)</a></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
+                </div>
+            </div>
+        </div>
+    </div>
+<div class="modal fade" id="SoldoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Sorry, 方案已售罄
+                    </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>请注意：请优先从<a href="buy.html" target="_blank">推荐页面</a>选购，改页面实时更新</p>
+                    <p>您选择的方案十分火爆，可能已被抢光啦 ಥ_ಥ </p>
+                    <p><span id="coupon">请加搬瓦工福利Q群</span>，获取内部上货时间</p>
+                    <p>加入搬瓦工交流QQ群，我们会第一时间推送抢购信息、各类搭建教程，干货满满！</p>
+                    <p>QQ群号： 暂时关闭</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
+                </div>
+            </div>
+        </div>
+    </div>
+<hr>
+<div class="container">
+    <div class="col-md-12">
+        <p class="text-center">
+            <small>Copyright © 2018
+                banwagong            </small>
+        </p>
+                            </div>
+</div>
+<script src="https://bwg1024.oss-cn-beijing.aliyuncs.com/static/js/react.min.js?v=fc888ceb818"></script>
+<!--Start of Contact Script-->
+    <script type="text/javascript">
+       var btns = $('.status-ok')
+
+       for (var i = 0; i < btns.length; i++) {
+           var btn = btns[i];
+           btn.onclick = function(e) {
+               var obj = e.target;
+               var pid = obj.attributes['pid'].value;
+               console.log('pid ' + pid);
+               open("https://bandwagonhost.com/aff.php?aff=39151&pid=" + pid);
+           }
+       }
+    </script>
+<!--End of Contact Script-->
+
+
+  
+</body>
+
+</html>
