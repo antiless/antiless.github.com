@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<sitemapindex
+<urlset
       xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
@@ -7,64 +7,66 @@
 <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
 
-<sitemap>
+<url>
   <loc>https://bwg8.info/</loc>
-  <lastmod>2019-01-16T20:24:03+00:00</lastmod>
+  <lastmod>2019-01-17T02:56:06+00:00</lastmod>
   <priority>1.00</priority>
-</sitemap>
-<sitemap>
+</url>
+<url>
   <loc>https://bwg8.info/youhuima.html</loc>
-  <lastmod>2019-01-16T20:24:03+00:00</lastmod>
+  <lastmod>2019-01-17T02:56:06+00:00</lastmod>
   <priority>0.80</priority>
-</sitemap>
-<sitemap>
+</url>
+<url>
   <loc>https://bwg8.info/jifang.html</loc>
-  <lastmod>2019-01-16T20:24:03+00:00</lastmod>
+  <lastmod>2019-01-17T02:56:06+00:00</lastmod>
   <priority>0.80</priority>
-</sitemap>
-<sitemap>
+</url>
+<url>
   <loc>https://bwg8.info/fangan.html</loc>
-  <lastmod>2019-01-16T20:24:03+00:00</lastmod>
+  <lastmod>2019-01-17T02:56:06+00:00</lastmod>
   <priority>0.80</priority>
-</sitemap>
-<sitemap>
+</url>
+<url>
   <loc>https://bwg8.info/jiaocheng.html</loc>
-  <lastmod>2019-01-16T20:24:03+00:00</lastmod>
+  <lastmod>2019-01-17T02:56:06+00:00</lastmod>
   <priority>0.80</priority>
-</sitemap>
-<sitemap>
+</url>
+<url>
   <loc>https://bwg8.info/faq.html</loc>
-  <lastmod>2019-01-16T20:24:03+00:00</lastmod>
+  <lastmod>2019-01-17T02:56:06+00:00</lastmod>
   <priority>0.80</priority>
-</sitemap>
-<sitemap>
+</url>
+<url>
   <loc>https://bwg8.info/blog/</loc>
-  <lastmod>2019-01-16T20:24:03+00:00</lastmod>
+  <lastmod>2019-01-17T02:56:06+00:00</lastmod>
   <priority>0.80</priority>
-</sitemap>
-<sitemap>
+</url>
+<url>
   <loc>https://bwg8.info/buy.html</loc>
-  <lastmod>2019-01-16T20:24:03+00:00</lastmod>
+  <lastmod>2019-01-17T02:56:06+00:00</lastmod>
   <priority>0.80</priority>
-</sitemap>
-<sitemap>
+</url>
+<url>
   <loc>https://bwg8.info/bbr.html</loc>
-  <lastmod>2019-01-16T20:24:03+00:00</lastmod>
+  <lastmod>2019-01-17T02:56:06+00:00</lastmod>
   <priority>0.80</priority>
-</sitemap>
-<sitemap>
+</url>
+<url>
   <loc>https://bwg8.info/index.html</loc>
-  <lastmod>2019-01-16T20:24:03+00:00</lastmod>
+  <lastmod>2019-01-17T02:56:06+00:00</lastmod>
   <priority>0.64</priority>
-</sitemap>
-<sitemap>
+</url>
+<url>
   <loc>https://bwg8.info/blog/index.html</loc>
-  <lastmod>2019-01-16T20:24:03+00:00</lastmod>
+  <lastmod>2019-01-17T02:56:06+00:00</lastmod>
   <priority>0.64</priority>
-</sitemap>
-<sitemap>
+</url>
+<url>
   <loc>https://bwg8.info/buy.html?f=jiaocheng</loc>
-  <lastmod>2019-01-16T20:24:03+00:00</lastmod>
+  <lastmod>2019-01-17T02:56:06+00:00</lastmod>
   <priority>0.64</priority>
-</sitemap>
-</sitemapindex>
+</url>
+
+
+</urlset>
